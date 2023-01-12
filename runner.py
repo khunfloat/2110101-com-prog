@@ -20,7 +20,7 @@ for dir in expr_dir:
 
 f = open("README.md", "w")
 
-f.write(f'Last Summit on {recent_file}\\\n{time_formated}\\\n\nnpm run up')
+f.write(f'Last Summit on {recent_file}\\\n{time_formated}\\\nnpm run up')
 
 f.close()
 
