@@ -1,9 +1,8 @@
-a, b, c = int(input()), int(input()), int(input())
+a, b, c = float(input()), float(input()), float(input())
 
 from math import sqrt
 
-pos_res = (-b + sqrt(b**2 - (4 * a * c))) / (2 * a)
-neg_res = (-b - sqrt(b**2 - (4 * a * c))) / (2 * a)
+res_1 = round((-b - sqrt(b**2 - (4 * a * c))) / (2 * a), 3)
+res_2 = round((-b + sqrt(b**2 - (4 * a * c))) / (2 * a), 3)
 
-print(pos_res)
-print(neg_res)
+print(res_1, res_2)
