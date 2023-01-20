@@ -1,4 +1,4 @@
-Last Summit on 01_Expr_09.py\
-20 Jan 2023 10:53:38\
+Last Summit on 02_StrList_F06.py\
+20 Jan 2023 10:54:17\
 \
 npm run up
