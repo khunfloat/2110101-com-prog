@@ -4,7 +4,8 @@
   "description": "Chayoot Kosiwanich Portfolio",
   "main": "index.js",
   "scripts": {
-    "up": "python runner.py"
+    "up": "python runner.py",
+    "generate": "python generate.py"
   },
   "repository": {
     "type": "git",
