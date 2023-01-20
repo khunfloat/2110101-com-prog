@@ -9,6 +9,8 @@ time_formated = f"{date_el[2]} {date_el[1]} {date_el[4]} {date_el[3]}"
 root_dir = os.listdir()
 expr_dir = list(filter(lambda dir: dir.startswith('0'), root_dir))
 
+print(expr_dir)
+
 recent_file = ""
 
 for dir in expr_dir:
