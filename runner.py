@@ -10,7 +10,7 @@ def up():
     time_formated = f"{date_el[2]} {date_el[1]} {date_el[4]} {date_el[3]}"
 
     root_dir = listdir()
-    expr_dir = sorted(list(filter(lambda dir: dir.startswith('0'), root_dir)))
+    expr_dir = sorted(list(filter(lambda dir: dir.startswith('0') or (dir == "HW"), root_dir)))
     recent_file = ""
 
     for dir in expr_dir:
