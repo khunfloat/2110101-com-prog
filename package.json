@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "up": "python runner.py up",
-    "generate": "python generate.py generate"
+    "generate": "python runner.py generate"
   },
   "repository": {
     "type": "git",
