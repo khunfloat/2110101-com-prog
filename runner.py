@@ -11,6 +11,7 @@ def up():
 
     root_dir = listdir()
     expr_dir = sorted(list(filter(lambda dir: dir.startswith('0') or (dir == "HW"), root_dir)))
+    print(expr_dir)
     recent_file = ""
 
     for dir in expr_dir:
