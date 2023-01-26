@@ -16,7 +16,7 @@ def up():
 
     for dir in expr_dir:
         for file in sorted(listdir(dir)):
-            if file.endswith('.py'):
+            if file.endswith('.py') or file.endswith('.ipynb'):
                 if os.stat(f"{dir}/{file}").st_size == 0:
                     break
                 recent_file = file
