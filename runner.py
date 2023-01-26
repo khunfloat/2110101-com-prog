@@ -21,6 +21,8 @@ def up():
                     break
                 recent_file = file
 
+    print(recent_file)
+
     f = open("README.md", "w")
 
     f.write(f'Last Submit on {recent_file}\\\n{time_formated}\\\n\\\nnpm run up')
