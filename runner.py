@@ -1,6 +1,6 @@
 from datetime import datetime, timezone, timedelta
 from os import listdir
-from os.path import exists
+from os.path import exists, isdir
 import os, sys
 
 def up():
@@ -10,7 +10,7 @@ def up():
     time_formated = f"{date_el[2]} {date_el[1]} {date_el[4]} {date_el[3]}"
 
     root_dir = listdir()
-    expr_dir = sorted(list(filter(lambda dir: dir.startswith('0') or (dir.endswith('hw')), root_dir)))
+    expr_dir = sorted(list(filter(lambda dir: isdir(dir), root_dir)))
     
     recent_file = ""
 
