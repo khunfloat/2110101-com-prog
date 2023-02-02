@@ -28,10 +28,10 @@ def up():
     f.close()
 
     os.system("git add README.md")
-    os.system('git commit -m "fix: update README.md by runner.py"')
+    os.system('git commit -m "📂 fix: update README.md by runner.py"')
 
     os.system("git add .")
-    os.system('git commit -m "feat: update new contents"')
+    os.system('git commit -m "📕 feat: update new contents"')
 
     os.system("git push")
 
