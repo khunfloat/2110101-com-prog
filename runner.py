@@ -7,7 +7,7 @@ def up():
     tz = timezone(timedelta(hours = 7))
     date = datetime.now(tz=tz)
     date_el = date.ctime().split(' ')
-    time_formated = f"{date_el[2]} {date_el[1]} {date_el[3]} {date_el[4]}"
+    time_formated = f"{date_el[5]} {date_el[1]} {date_el[3]} {date_el[4]}"
     print(time_formated)
 
     root_dir = listdir()
