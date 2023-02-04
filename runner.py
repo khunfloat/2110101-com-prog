@@ -23,7 +23,7 @@ def up():
 
     f = open("README.md", "w")
 
-    f.write(f'Last Submit on {recent_file}\\\n{time_formated}\\\n\\\nnpm run up')
+    f.write(f'Last Submit on {recent_file}\\\n{time_formated}\\\n\\\nmake up')
 
     f.close()
 
