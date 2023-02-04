@@ -9,10 +9,7 @@ def upgrade(grades, upgrade_list):
             a = grade_mapper.index(grade)
             grades[i][1] = grade_mapper[a+1]
 
-    # grades = sorted(grades)
-
-    for i, grade in enumerate(sorted(grades)):
-        grades[i] = grade
+    grades.sort()
     
 def index_of(grades, uid):
     i = -1
