@@ -8,7 +8,7 @@ def up():
     date = datetime.now(tz=tz)
     date_el = date.ctime().split(' ')
     # time_formated = f"{date_el[5]} {date_el[1]} {date_el[3]} {date_el[4]}"
-    time_formated = date_el
+    time_formated = ' '.join(date_el)
 
     root_dir = listdir()
     expr_dir = sorted(list(filter(lambda dir: isdir(dir), root_dir)))
