@@ -1,30 +1,41 @@
 res = []
 
-indexer = True
-
-def index(bool):
-    if bool: return -1
-    else: return 0
+ind = True #หลัง
 
 for i in range(int(input())):
-    res.insert(index(indexer), int(input()))
-    indexer = not bool
+    e = int(input())
+    if ind:
+        res.append(e)
+    else:
+        res.insert(0, e)
 
-set_2 = input().strip()
-if set_2 != '':
-    set_2 = [int(e) for e in set_2.strip().split(' ')]
+    ind = not ind
 
-for n in set_2:
-    res.insert(index(indexer), int(input()))
-    indexer = not bool
+set2 = input()
+
+if set2 != '':
+    set2 = [int(e) for e in set2.split(' ')]
+
+    for e in set2:
+        if ind:
+            res.append(e)
+        else:
+            res.insert(0, e)
+
+        ind = not ind
 
 while True:
+    e = int(input().strip())
 
-    n = int(input())
-    if n != -1:
-        res.insert(index(indexer), int(input()))
-        indexer = not bool
-    else:
+    if e == -1:
         break
+    else:
+        if ind:
+            res.append(e)
+        else:
+            res.insert(0, e)
 
-print(res)   
+        ind = not ind
+
+
+print(res)
