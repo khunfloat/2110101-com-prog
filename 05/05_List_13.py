@@ -1,31 +1,30 @@
 res = []
 
-for i in range(int(input())):
-    if i%2 == 0:
-        res.append(int(input()))
-    else:
-        res.insert(0, int(input()))
+indexer = True
 
-len_set_1 = len(res)
+def index(bool):
+    if bool: return -1
+    else: return 0
+
+for i in range(int(input())):
+    res.insert(index(indexer), int(input()))
+    indexer = not bool
 
 set_2 = input().strip()
 if set_2 != '':
     set_2 = [int(e) for e in set_2.strip().split(' ')]
 
-for i, n in enumerate(set_2):
-    i += len_set_1
-    if i%2 == 0:
-        res.append(n)
-    else:
-      res.insert(0, n)
+for n in set_2:
+    res.insert(index(indexer), int(input()))
+    indexer = not bool
 
-len_set_2 = len(res)
+while True:
 
-while (n := int(input())) != -1:
-    if len_set_2%2 == 0:
-        res.append(n)
+    n = int(input())
+    if n != -1:
+        res.insert(index(indexer), int(input()))
+        indexer = not bool
     else:
-      res.insert(0, n)
-    len_set_2 += 1
+        break
 
 print(res)   

@@ -8,4 +8,4 @@ while n != 1:
 
     res.append(str(n))
 
-print('->'.join(res))
+print('->'.join(res[-15:]))

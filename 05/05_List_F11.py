@@ -1,7 +1,7 @@
 def missing_digits(t):
     chars = list(t)
 
-    a = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0']
+    a = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
 
     for char in chars:
         if char.isdigit():
@@ -13,6 +13,6 @@ def missing_digits(t):
     if chars == []:
         return []
     else:
-        return a
+        return [int(e) for e in a]
 
 exec(input())

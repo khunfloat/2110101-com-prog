@@ -1,6 +1,6 @@
 chars = list(input())
 
-a = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0']
+a = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
 
 for char in chars:
     if char.isdigit():
@@ -9,7 +9,7 @@ for char in chars:
         except ValueError:
             pass
 
-if chars == []:
+if a == []:
     print("None")
 else:
-    print(', '.join(a))
+    print(','.join(a))
