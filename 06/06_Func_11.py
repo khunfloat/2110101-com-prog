@@ -1,1 +1,1 @@
-print(bin(sum([int(e, 2) for e in input().strip().split(' ')]))[2:])
+print(bin(sum([int(e, 2) for e in input().strip().split()]))[2:])
