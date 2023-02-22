@@ -4,7 +4,6 @@ next_recent_queue = []
 next_queue_number = None
 
 remaining_queue = []
-# all_queues = []
 
 qtime = []
 
@@ -20,7 +19,6 @@ for _ in range(int(input())):
         time = int(raw[1])
         new_recent_queue = [next_queue_number, time]
 
-        # all_queues.append(new_recent_queue)
         remaining_queue.append(new_recent_queue)
 
         print('ticket', next_queue_number)
